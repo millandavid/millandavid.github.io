@@ -1,0 +1,186 @@
+<!-- Inspiration from https://github.com/chrlng/chrlng.github.io -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		<meta name="description" content="Millan David portfolio">
+		<meta name="keywords" content="Millan David, UofM, University of Manitoba">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/b.jpg">
+		<link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+		<title>Millan David</title>
+	</head>
+	<body>
+
+		<!--Navigation Bar-->
+		<div id="nav">
+			<a href="#home" class="nav-item right">MILLAN DAVID</a>
+			<a href="#project-section" class="nav-item left">PROJECTS</a>
+			<a href="#about-section" class="nav-item left">ABOUT</a>
+		</div>
+
+		<div class="page-content">
+			<!--Home Page-->
+			<section id="home">
+				<div class="container row">
+          <img src="assets/img/dp.jpg" id="home-icon">
+          <div class="container column" id="home-text">
+            <h1 class="title">Hello I am <br><strong>Millan David</strong></h1>
+          </div>
+				</div>
+			</section>
+
+			<!--About Section-->
+			<section id="about-section">
+        <div class ="container column">
+          <h1 class="about-title" >About me</h1>
+            <p class="about-text">
+              Hello! My name is Millan David and I am currently in my fifth year at the University of Manitoba. I am
+              student at the Faculty of Science and enrolled in the Computer Science Major Program with an expected
+              graduation of January 2024.
+            </p>
+            <p class="about-text">
+              I chose to pursue a Computer Science degree because I felt the medical field was no longer a fit for me and that
+              I could still make an impact through coding in different ways. Helping others is always a passion I have had and
+              I hope can do so with the power of Computer Science.
+            </p>
+            <p class="about-text">
+              On my free time, I like to work out at the gym, participate in sports such as volleyball and track and field,
+              build computers, play video games, and read book. I also love collecting coins, sneakers, certain video games,
+              and books.
+            </p>
+        </div>
+			</section>
+
+			<!--Project Section-->
+			<section class="container column" id="project-section">
+				<h1 class="subtitle">PROJECTS</h1>
+
+				<!--Filter Buttons-->
+				<div class="contianer row" id="button-section">
+					<button class="filter-button active" onclick="filterSelection('all')">All</button>
+          <button class="filter-button" onclick="filterSelection('game')">Game Dev</button>
+					<button class="filter-button" onclick="filterSelection('java')">Java</button>
+          <button class="filter-button" onclick="filterSelection('javascript')">Javascript</button>
+          <button class="filter-button" onclick="filterSelection('prolog')">Prolog</button>
+					<button class="filter-button" onclick="filterSelection('web')">Web Dev</button>
+				</div>
+
+				<!--Individual Projects-->
+				<div class="container row" id="project-container">
+
+          <div class="each-project java">
+					  <img class="proj-img" src="assets/img/eBuy.png"/>
+					  <div class="proj-description container column">
+					  	<div class="img-description">
+							<h2>eBuy</h2>
+							<p> With a group of five, developed an app that allows for user to user transactions in an auction based system.</h3>
+							<br>
+							<br>
+							<i>Java, Android Studio </i>
+						</div>
+					  </div>
+					</div>
+
+					<div class="each-project web">
+					  <img class="proj-img" src="assets/img/fitness.PNG"/>
+					  <div class="proj-description container column">
+					  	<div class="img-description">
+                <h2>Fitness Tracker</h2>
+                <p>With a group of give, developed a web application to keep track of daily exercise and meal intake.</p>
+                <br>
+                <i>HTML / CSS / JavaScript</i>
+              </div>
+					  </div>
+					</div>
+
+					<div class="each-project game">
+					  <img class="proj-img" src="assets/img/gamejam.png"/>
+					  <div class="proj-description container column">
+					  	<div class="img-description">
+                <h2>Keyboard Warrior</h2>
+                <p> 
+                  Created a 2D platformer game using C# and Unity.
+                </p>
+                <br>
+                <i>C#, Unity</i>
+              </div>
+					  </div>
+					</div>
+
+					<div class="each-project java">
+					  <img class="proj-img" src="assets/img/graphics.PNG"/>
+					  <div class="proj-description container column">
+              <div class="img-description">
+                <h2>3D Infinite Runner Game</h2>
+                <p>Using Processing, I implemented a 3D endless runner game that mimics Temple Run.</p>
+                <i>Java, Processing</i>
+              </div>
+					  </div>
+					</div>
+
+					<div class="each-project javascript">
+					  <img class="proj-img" src="assets/img/huffman.PNG"/>
+					  <div class="proj-description container column">
+					  	<div class="img-description">
+                <h2>Huffman Encoder</h2>
+                <p>
+                  Devised a solution to the Huffman Encoder algorithm by incoroporating 
+                  linked-list and hash table data structure to compress large files and
+                  decrease storage space.
+                </p>
+                <br>
+                <i>Javascript</i>
+              </div>
+					  </div>
+					</div>
+
+					<div class="each-project prolog">
+					  <img class="proj-img" src="assets/img/prolog.PNG"/>
+					  <div class="proj-description container column">
+					  	<div class="img-description">
+                <h2>Heuristic AI</h2>
+                <p>Created a Heuristic AI that will guess what food you ordered at Olive Garden.</p>
+                <br>
+                <i>Prolog</i>
+					  	</div>
+					  </div>
+					</div>
+
+          <div class="each-project web">
+					  <img class="proj-img" src="assets/img/b.jpg"/>
+					  <div class="proj-description container column">
+					  	<div class="img-description">
+                <h2>Personal Website</h2>
+                <p>Website created from HTML/CSS/Javascript. Inspired from Christine Nguyen</p>
+                <br>
+                <i>HTML / CSS / JavaScript</i>
+					  	</div>
+					  </div>
+					</div>
+
+				</div>
+			</section>
+
+
+			<!--Footer/Contact-->
+			<section class="container column" id="footer">
+				<div class="container row" id="social-container">
+          <a href="mailto:davidm2@myumanitoba.ca" target="_blank"><i class="fa fa-envelope"></i></a>
+					<a href="https://github.com/millandavid"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/millandavid"> <i class="fab fa-github"></i></a>
+          <a href="https://code.cs.umanitoba.ca/millandavid"> <i class="fab fa-brands fa-gitlab"></i>
+				</div>
+			</section>
+			
+		</div>
+		<script src="assets/scripts/scripts.js"></script>
+
+	</body>
+</html>
